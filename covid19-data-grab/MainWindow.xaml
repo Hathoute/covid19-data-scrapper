@@ -1,0 +1,18 @@
+﻿<Window x:Class="covid19_data_grab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:covid19_data_grab"
+        mc:Ignorable="d"
+        Title="Covid19 Data Scrapper" Height="156" Width="483.5">
+    <Grid>
+        <Label Content="Connection Status:" HorizontalAlignment="Left" Margin="326,87,0,0" VerticalAlignment="Top"/>
+        <Rectangle x:Name="rctStatus" Fill="White" HorizontalAlignment="Left" Height="26" Stroke="Black" VerticalAlignment="Top" Width="26" Margin="440,87,0,0"/>
+        <Button x:Name="btnGrabData" Content="Grab Data" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="177,81,0,0" Height="32" Click="OnGrabDataClick"/>
+        <TextBox x:Name="txtbOutput" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Margin="112,32,0,0"/>
+        <Button x:Name="btnSelectFolder" Content="Select Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="86" Margin="362,32,0,0" Height="23" Click="OnSelectFolderClick"/>
+        <Label Content="Output folder:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,32,0,0" Width="85"/>
+
+    </Grid>
+</Window>
